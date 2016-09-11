@@ -25,7 +25,7 @@ curl "api_endpoint_here"
 ## Get All Rides
 
 ```shell
-curl "http://example.com/api/rides"
+curl http://localhost:3000/api/rides
 ```
 
 > The above command returns JSON structured like this:
@@ -69,18 +69,15 @@ This endpoint retrieves all rides.
 ## Create a Ride
 
 ```shell
-curl "http://example.com/api/rides"
--H 'Content-Type: application/json'
--X PUT
+curl http://localhost:3000/api/rides
+-H "Content-Type:application/json"
+-X POST
 -d '{
-  "departure_location": "3394 SW 342th Ave. San Francisco, CA 33029",
-  "departure_time": "11-06-2016 5:00 pm",
-  "arrival_location": "213 Johnson St. Apt 2 San Jose, CA 34323",
-  "seats_available": 5,
-  "created_by": "<user.id>",
-  "one_way": true
-  }'
-
+    "departure_location": "20 Rue Barbette, 75003 Paris, France",
+    "arrival_location": "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France",
+    "departure_time": "01-01-1915 11:23 pm",
+    "seats_available": 3,
+    "created_by": "<user.id>"}'
 ```
 
 > The above command returns JSON structured like this:
