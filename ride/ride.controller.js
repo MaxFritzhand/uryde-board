@@ -94,6 +94,7 @@ function rideController(api){
   api.post('/rides', (req, res) => {
     // Check is request is valid
     if(requestValid(req.body)){
+
       // Create Ride and save
       var new_body;
       var configuredBody = configureBody(req.body, function(data){
