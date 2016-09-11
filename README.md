@@ -1,16 +1,11 @@
 
+
+
 # Introduction
 
 This is the prototyping docs made for uRyde API endpoints, which will allow you to post rides and get rides in our database
 
 We currently own have docs the shell scripts up, but hope to have other languages soon
-
-## Start Service
-In this project directory, run the following command in your terminal
-```
-$ node app.js
-```
-
 
 # Authentication
 
@@ -75,9 +70,6 @@ This endpoint retrieves all rides.
 ## Create a Ride
 
 ```shell
-curl "http://example.com/api/rides"
--H "Authorization: <AccessToken>"
-
 curl "http://example.com/api/rides"
 -H 'Content-Type: application/json'
 -X PUT
