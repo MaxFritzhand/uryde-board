@@ -74,8 +74,9 @@ function geocodeAddress(addr,callback){
 
 function rideController(api){
   /*
-  GET: Request to pull all rides currently in DB
-  */
+   * GET: Request to pull all rides currently in DB
+   *  TODO: Add query parameters for more detail searching
+   */
   api.get('/rides', (req, res) => {
     console.log("this is a get in rides")
     Ride.where('createdBy')
@@ -85,6 +86,11 @@ function rideController(api){
     })
   })
 
+  /*
+   * POST: Create a ride and add to db
+   * Client must give 5 fields (departure_time, departure_location, arrival_location,
+   * seats_available, created_by:User.id)
+   */
   api.post('/rides', (req, res) => {
     // Check is request is valid
     if(requestValid(req.body)){
@@ -94,8 +100,9 @@ function rideController(api){
         var rideToSave = new Ride(data);
         rideToSave.save(function (err) {
           if (err) return console.log(err);
-          // saved!
         });
+
+        //Send saved ride in DB back to user
         res.json(rideToSave);
 
       });
