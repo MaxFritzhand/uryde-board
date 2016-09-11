@@ -26,7 +26,6 @@ curl "api_endpoint_here"
 
 ```shell
 curl "http://example.com/api/rides"
--H "Authorization: <AccessToken>"
 ```
 
 > The above command returns JSON structured like this:
