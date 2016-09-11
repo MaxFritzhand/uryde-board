@@ -73,11 +73,12 @@ curl http://localhost:3000/api/rides
 -H "Content-Type:application/json"
 -X POST
 -d '{
-    "departure_location": "20 Rue Barbette, 75003 Paris, France",
-    "arrival_location": "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France",
-    "departure_time": "01-01-1915 11:23 pm",
-    "seats_available": 3,
-    "created_by": "<user.id>"}'
+      "departure_location": "20 Rue Barbette, 75003 Paris, France",
+      "arrival_location": "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France",
+      "departure_time": "01-01-1915 11:23 pm",
+      "seats_available": 3,
+      "created_by": "<user.id>"
+    }'
 ```
 
 > The above command returns JSON structured like this:
