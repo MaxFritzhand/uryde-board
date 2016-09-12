@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const assert = require('assert');
 const app = express();
 const api = express.Router();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 var bodyParser = require('body-parser');
 
