@@ -2,6 +2,7 @@ const express = require('express')
 const mongo = require('mongodb').MongoClient;
 const mongoose = require('mongoose');
 const assert = require('assert');
+const config = require('./config');
 const app = express();
 const api = express.Router();
 
@@ -12,7 +13,7 @@ const port = process.env.PORT || 3000;
 var bodyParser = require('body-parser');
 
 // Connection URL for db
-var url = 'mongodb://admin:hacks@ds019946.mlab.com:19946/ryde-board';
+var url = config.db.url;
 
 // Connect mongoose as well
 mongoose.connect(url, function(err) {
