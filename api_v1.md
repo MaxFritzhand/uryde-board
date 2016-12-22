@@ -3,51 +3,51 @@
 ## Todo
 
 ### Ride
-[ ] GET /Ride = get all rides in database
+- [ ] GET /Ride = get all rides in database
 - Parameters
       - TBD
 - Queries
     - departures near current location
     - arrivals in near a specific location (given by user)
       
-[ ] GET /Ride/:id || /Ride?id={someId} = get a certain ride with a particuliar id
+- [ ] GET /Ride/:id || /Ride?id={someId} = get a certain ride with a particuliar id
 - Parameters
     - ride obj id
       
-[ ] POST /Ride = create a new ride
+- [ ] POST /Ride = create a new ride
 - Parameters
     - TBD
       
-[ ] PUT /Ride/:id = update a certain ride
+- [ ] PUT /Ride/:id = update a certain ride
 - Parameters
     - TBD
 
 ### Passenger
-[ ] GET /Passenger/:rideId = get users in a certain ride
+- [ ] GET /Passenger/:rideId = get users in a certain ride
 - Parameters
     - TBD 
     
-[ ] POST /Passenger/:rideId = add user to a certain ride
+- [ ] POST /Passenger/:rideId = add user to a certain ride
 - Parameters
     - TBD 
 
-[ ] DELETE /Passenger/:rideId = delete a passenger from a certain ride
+- [ ] DELETE /Passenger/:rideId = delete a passenger from a certain ride
 - Parameters
     - TBD 
 
 ### User
-[ ] GET /User/:id = get user in db
+- [ ] GET /User/:id = get user in db
 - Parameters
     - TBD 
   
-[ ] POST /User/:id = add user to db
+- [ ] POST /User/:id = add user to db
 - Parameters
     - TBD 
     
-[ ] DELETE /User/:id = delete user in db
+- [ ] DELETE /User/:id = delete user in db
 - Parameters
     - TBD 
 
-[ ] PUT /User/:id = update user in db
+- [ ] PUT /User/:id = update user in db
 - Parameters
     - TBD 
