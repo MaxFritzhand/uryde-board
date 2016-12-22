@@ -30,6 +30,7 @@
 [ ] POST /Passenger/:rideId = add user to a certain ride
 - Parameters
     - TBD 
+
 [ ] DELETE /Passenger/:rideId = delete a passenger from a certain ride
 - Parameters
     - TBD 
